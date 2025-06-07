@@ -1,8 +1,8 @@
-/* Applying Inter font globally */
+/* Applying serif font globally */
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #111827; /* bg-gray-900 */
-    color: #f3f4f6; /* text-gray-100 */
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #fdf6e3; /* light cream */
+    color: #1a202c; /* dark text */
 }
 
 /* Custom scrollbar for a more modern feel (optional) */
@@ -11,16 +11,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1f2937; /* bg-gray-800 */
+    background: #e5e7eb; /* light gray track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #4b5563; /* bg-gray-600 */
+    background: #cbd5e1; /* gray thumb */
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #6b7280; /* bg-gray-500 */
+    background: #a0aec0; /* darker on hover */
 }
 
 /* Simple fade-in animation for sections */
