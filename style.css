@@ -5,6 +5,16 @@ body {
     color: #1a202c; /* dark text */
 }
 
+/* Theme variables */
+:root {
+    --card-bg: #f9fafb; /* light neutral for project cards */
+}
+
+/* Utility class using the card background variable */
+.bg-card {
+    background-color: var(--card-bg);
+}
+
 /* Custom scrollbar for a more modern feel (optional) */
 ::-webkit-scrollbar {
     width: 8px;
