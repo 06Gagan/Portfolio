@@ -1,5 +1,3 @@
-// My portfolio's main script file for interactions.
-
 document.addEventListener('DOMContentLoaded', function() {
     // Setting up smooth scrolling for all navigation links that point to an ID.
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
