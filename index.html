@@ -20,13 +20,28 @@
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#home" class="text-2xl font-bold text-[var(--charcoal)] hover:text-[var(--persian-green)] transition-colors">Gagandeep</a>
-            <div class="space-x-4 md:space-x-6 text-sm md:text-base text-[var(--charcoal)]">
+            
+            <div class="hidden md:flex space-x-4 md:space-x-6 text-sm md:text-base text-[var(--charcoal)]">
                 <a href="#home" class="nav-link hover:text-[var(--persian-green)] transition-colors px-2 py-1">Home</a>
                 <a href="#about" class="nav-link hover:text-[var(--persian-green)] transition-colors px-2 py-1">About</a>
                 <a href="#skills" class="nav-link hover:text-[var(--persian-green)] transition-colors px-2 py-1">Skills</a>
                 <a href="#projects" class="nav-link hover:text-[var(--persian-green)] transition-colors px-2 py-1">Projects</a>
                 <a href="#contact" class="nav-link hover:text-[var(--persian-green)] transition-colors px-2 py-1">Contact</a>
             </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="menu-button" class="text-2xl text-[var(--charcoal)]">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg">
+            <a href="#home" class="block py-3 px-6 text-sm text-[var(--charcoal)] hover:bg-gray-200">Home</a>
+            <a href="#about" class="block py-3 px-6 text-sm text-[var(--charcoal)] hover:bg-gray-200">About</a>
+            <a href="#skills" class="block py-3 px-6 text-sm text-[var(--charcoal)] hover:bg-gray-200">Skills</a>
+            <a href="#projects" class="block py-3 px-6 text-sm text-[var(--charcoal)] hover:bg-gray-200">Projects</a>
+            <a href="#contact" class="block py-3 px-6 text-sm text-[var(--charcoal)] hover:bg-gray-200">Contact</a>
         </div>
     </nav>
 
@@ -42,7 +57,7 @@
                 Engineer from IIT Madras with a passion for developing innovative software solutions. Experienced in building responsive web applications, Predictive Modeling, Cloud Data management and tackling complex technical challenges.
             </p>
             <div class="flex justify-center space-x-4 mb-10">
-                <a href="https://drive.google.com/file/d/1teuuIsDwsbaJ0WkGonc6onUoHV_qh4Z0/view?usp=sharing" target="_blank" class="bg-[var(--burnt-sienna)] hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <a href="https://drive.google.com/file/d/1teuuIsDwsbaJ0WkGonc6onUoHV_qh4Z0/view?usp=sharing" target="_blank" class="bg-[var(--burnt-sienna)] hover:bg-[var(--burnt-sienna-dark)] text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
                     View Resume <i class="fas fa-download ml-2"></i>
                 </a>
                 <a href="#projects" class="bg-gray-200 hover:bg-gray-300 text-[var(--charcoal)] font-semibold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
@@ -134,9 +149,9 @@
                 <h3 class="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-10">Full Stack & Web Development</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div class="bg-[var(--card-bg)] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group flex flex-col">
-                        <img src="./Public/Image/Basa.png" alt="IITM Basa Lab Website" class="w-full h-48 object-cover">
+                        <img src="./Public/Image/Basa.png" alt="Screenshot of the IITM Basa Lab Website" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold mb-2 text-[var(--persian-green)]">IITM Basa Lab Website</h3>
+                            <h4 class="text-xl font-bold mb-2 text-[var(--persian-green)]">IITM Basa Lab Website</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">Designed and developed an 8-section responsive website for an IIT Madras professor to showcase research work. Features admin login and password reset via Google OAuth2.</p>
                             <div class="flex space-x-4 mt-auto">
                                 <a href="https://github.com/06Gagan/BASA-Backend---2" target="_blank" class="font-semibold text-gray-700 hover:text-[var(--burnt-sienna)] transition-colors text-sm">GitHub</a>
@@ -145,9 +160,9 @@
                         </div>
                     </div>
                     <div class="bg-[var(--card-bg)] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group flex flex-col">
-                        <img src="./Public/Image/Guruvela.png" alt="Guruvela Platform" class="w-full h-48 object-cover">
+                        <img src="./Public/Image/Guruvela.png" alt="Screenshot of the Guruvela Platform" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Guruvela Counseling Platform</h3>
+                            <h4 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Guruvela Counseling Platform</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">Multilingual student guidance platform for JEE aspirants with college prediction, document verification, mentor support, and a custom rule-based chatbot.</p>
                             <div class="flex space-x-4 mt-auto">
                                 <a href="https://github.com/06Gagan/guruvela" target="_blank" class="font-semibold text-gray-700 hover:text-[var(--burnt-sienna)] transition-colors text-sm">GitHub</a>
@@ -156,9 +171,9 @@
                         </div>
                     </div>
                      <div class="bg-[var(--card-bg)] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group flex flex-col">
-                        <img src="./Public/Image/FamilySync.png" alt="FamilySync App" class="w-full h-48 object-cover">
+                        <img src="./Public/Image/FamilySync.png" alt="Screenshot of the FamilySync App" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
-                             <h3 class="text-xl font-bold mb-2 text-[var(--persian-green)]">FamilySync App</h3>
+                             <h4 class="text-xl font-bold mb-2 text-[var(--persian-green)]">FamilySync App</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">A smart tool to help families organize daily life. Features an AI-powered meal planner, shopping list generator, chore manager, and activity planner.</p>
                              <div class="flex space-x-4 mt-auto">
                                 <a href="https://github.com/06Gagan/family-app-react" target="_blank" class="font-semibold text-gray-700 hover:text-[var(--burnt-sienna)] transition-colors text-sm">GitHub</a>
@@ -173,9 +188,9 @@
                 <h3 class="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-10">Data Engineering & ETL</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div class="bg-[var(--card-bg)] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group flex flex-col">
-                        <img src="./Public/Image/Informatica.png" alt="Informatica Cloud ETL" class="w-full h-48 object-cover">
+                        <img src="./Public/Image/Informatica.png" alt="Diagram of an Informatica Cloud ETL pipeline" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow">
-                             <h3 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Informatica Cloud ETL</h3>
+                             <h4 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Informatica Cloud ETL</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">Built end-to-end ETL pipelines using Informatica CDI, connecting to on-prem SQL servers and applying Filter, Expression, and Lookup transformations to integrate data.</p>
                             </div>
                     </div>
@@ -187,7 +202,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                      <div class="bg-[var(--card-bg)] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group flex flex-col">
                         <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Car Price Prediction</h3>
+                            <h4 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Car Price Prediction</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">Built a linear regression model to predict used car prices, achieving an R-squared value of 0.85. Cleaned data and applied feature scaling to improve model performance.</p>
                              <div class="flex space-x-4 mt-auto">
                                 <a href="https://github.com/06Gagan/Car-Price-prediction" target="_blank" class="font-semibold text-gray-700 hover:text-[var(--burnt-sienna)] transition-colors text-sm">GitHub</a>
@@ -196,7 +211,7 @@
                     </div>
                     <div class="bg-[var(--card-bg)] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 group flex flex-col">
                         <div class="p-6 flex flex-col flex-grow">
-                            <h3 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Personal Income Classification</h3>
+                            <h4 class="text-xl font-bold mb-2 text-[var(--persian-green)]">Personal Income Classification</h4>
                             <p class="text-gray-600 text-sm mb-4 flex-grow">Completed a classification project for predicting income levels using Logistic Regression & KNN to support effective subsidy planning.</p>
                              <div class="flex space-x-4 mt-auto">
                                 <a href="https://github.com/06Gagan/Income-classification-case-study" target="_blank" class="font-semibold text-gray-700 hover:text-[var(--burnt-sienna)] transition-colors text-sm">GitHub</a>
@@ -208,14 +223,29 @@
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-[var(--bg-light)] fade-in-section">
+    <section id="coding-profiles" class="py-20 bg-[var(--bg-light)] fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-[var(--charcoal)]">Coding Profiles</h2>
+            <hr class="w-20 h-1 bg-[var(--saffron)] mx-auto mb-12 border-0 rounded">
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-lg">
+                <a href="https://leetcode.com/u/your-leetcode-username/" target="_blank" class="text-gray-700 hover:text-[var(--persian-green)] transition-colors font-semibold">
+                    <i class="fas fa-code mr-2"></i>LeetCode
+                </a>
+                <a href="https://www.geeksforgeeks.org/user/your-gfg-username/" target="_blank" class="text-gray-700 hover:text-[var(--persian-green)] transition-colors font-semibold">
+                    <i class="fas fa-laptop-code mr-2"></i>GeeksforGeeks
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white fade-in-section">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[var(--charcoal)]">Get In Touch</h2>
             <hr class="w-20 h-1 bg-[var(--saffron)] mx-auto mb-12 border-0 rounded">
             <p class="text-gray-700 text-lg max-w-xl mx-auto mb-8">
                 I'm always open to discussing new projects, creative ideas, or opportunities to collaborate. Feel free to reach out!
             </p>
-            <a href="mailto:Gaganmaurya847@gmail.com" class="inline-block bg-[var(--burnt-sienna)] hover:bg-opacity-90 text-white font-bold py-4 px-10 rounded-lg shadow-lg transition-transform transform hover:scale-105 text-lg">
+            <a href="mailto:Gaganmaurya847@gmail.com" class="inline-block bg-[var(--burnt-sienna)] hover:bg-[var(--burnt-sienna-dark)] text-white font-bold py-4 px-10 rounded-lg shadow-lg transition-transform transform hover:scale-105 text-lg">
                 <i class="fas fa-paper-plane mr-2"></i> Say Hello
             </a>
             <div class="mt-12 flex justify-center space-x-6 text-3xl">

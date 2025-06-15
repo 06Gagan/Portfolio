@@ -14,6 +14,7 @@
     --saffron: #E9C46A;
     --sandy-brown: #F4A261;
     --burnt-sienna: #E76F51;
+    --burnt-sienna-dark: #D96041; /* A slightly darker shade for hover states */
     
     --bg-light: #f8f9fa; /* A clean, off-white background */
     --text-dark: var(--charcoal);
@@ -21,13 +22,14 @@
     --card-bg: #ffffff;
 }
 
+/* My basic body styles */
 body {
-    font-family: 'Poppins', sans-serif; /* A more modern, sans-serif font */
     background-color: var(--bg-light);
     color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Custom scrollbar using the new palette */
+/* A custom scrollbar that matches my theme */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -45,38 +47,42 @@ body {
     background: var(--charcoal);
 }
 
-/* Fade-in animation for sections */
+/* My fade-in animation for sections */
 .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+/* This class makes the section visible */
 .fade-in-section.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Updated active nav link style with a subtle underline effect */
+/* The style for the active navigation link */
 .nav-link-active {
     color: var(--persian-green);
     font-weight: 600;
     position: relative;
 }
 
+/* The underline effect for the active link */
 .nav-link-active::after {
     content: '';
     position: absolute;
-    width: 70%;
-    height: 2px;
     bottom: -4px;
     left: 15%;
+    width: 70%;
+    height: 2px;
     background-color: var(--persian-green);
 }
 
-/* A gradient class for headings */
+/* A gradient for my headings */
 .text-gradient {
     background: linear-gradient(45deg, var(--persian-green), var(--sandy-brown));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
